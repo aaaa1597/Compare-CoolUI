@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="16dp"
+    app:cardBackgroundColor="#001F36"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <!-- アイコン -->
+        <ImageView
+            android:id="@+id/img_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_device"
+            android:tint="#00F5FF"
+            android:layout_marginEnd="12dp"/>
+
+        <!-- テキスト部分 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Device Name"
+                android:textColor="#00F5FF"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txt_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UUID / RSSI"
+                android:textColor="#80E0FF"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+        <!-- RSSI -->
+        <TextView
+            android:id="@+id/txt_rssi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-65 dBm"
+            android:textColor="#00F5FF"
+            android:textSize="14sp"
+            android:layout_marginEnd="12dp"/>
+
+        <!-- ADD ボタン -->
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADD"
+            android:backgroundTint="#002B4D"
+            android:textColor="#00F5FF"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="4dp"
+            app:cornerRadius="20dp"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
