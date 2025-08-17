@@ -1,5 +1,4 @@
 # Compare-CoolUI
-
 かっこいいUIをChatGPT/Gemini/Copilotに作らせてみた。
 
 ## 命令文
